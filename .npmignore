@@ -1,0 +1,33 @@
+# Node generated files
+node_modules
+npm-debug.log
+.gitignore
+.npmignore
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# IDE generated files
+.idea
+.vscode
+
+# configuration files
+karma.conf.js
+protractor.conf.js
+webpack.config.js
+tsconfig*
+tslint*
+
+# non distributed files
+src
+lib
+e2e
+coverage
+!dist
+
+# others
+.*
+build
+hooks
+testresults

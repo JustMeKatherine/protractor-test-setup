@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ff843890-90b4-47c7-b827-5aeca3a31c7c" name="testresults\e2e-test-results.xml" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2018-05-31T13:26:35.2150000+02:00" start="2018-05-31T13:26:35.2150000+02:00" finish="2018-05-31T13:26:38.9410000+02:00" />
+  <Results>
+    <UnitTestResult executionId="a7aeb4a6-dfe3-4252-ad6c-19c15c143928" testId="45745a6c-99f3-4a43-a78a-a1e122fe6b47" testName="On the ToDos page  I can add a new To Do to the list" computerName="Lenovo-PC" duration="00:00:03.7260000" startTime="2018-05-31T13:26:35.2150000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="92706941-c65d-4719-9dee-91d34532d4a5">
+      
+    </UnitTestResult>
+    <UnitTestResult executionId="055e0200-4e4a-46a0-91c1-97cae3430b68" testId="a518af67-a207-4aa6-8dd9-46f007182d70" testName="On the user page  there is a list of users displayed" computerName="Lenovo-PC" duration="00:00:00.0000000" startTime="2018-05-31T13:26:38.9410000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="47687c57-4c85-4f6f-a798-533ac67e4784">
+      
+    </UnitTestResult>
+    <UnitTestResult executionId="d1826056-6f02-4be6-8f93-74fe13800b9f" testId="22170406-c355-4bc1-8102-0baf16e55b73" testName="On the user page  there is user&apos;s profile info displayed" computerName="Lenovo-PC" duration="00:00:00.0000000" startTime="2018-05-31T13:26:38.9410000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="47687c57-4c85-4f6f-a798-533ac67e4784">
+      
+    </UnitTestResult>
+    <UnitTestResult executionId="4e9a3c07-0467-4202-a9e1-6d1b717cab0d" testId="69cc884e-181f-4e8b-9842-1edf2d4acef0" testName="On the user login page  user, before being created, cannot log in" computerName="Lenovo-PC" duration="00:00:00.0000000" startTime="2018-05-31T13:26:38.9410000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f">
+      
+    </UnitTestResult>
+    <UnitTestResult executionId="3ea70c15-6555-4b64-bb94-00be602305cc" testId="7f377db0-a422-4cfc-8b0d-e98d7dd5f856" testName="On the user login page  after creating new user, he is able to log in when provide correct credentials" computerName="Lenovo-PC" duration="00:00:00.0000000" startTime="2018-05-31T13:26:38.9410000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f">
+      
+    </UnitTestResult>
+    <UnitTestResult executionId="0e3d545e-37b5-4a92-9552-4d1913808c53" testId="31f422d4-9616-42b0-891f-4e3a51c9fa1f" testName="On the user login page  user is not able to log in, when provide incorrect password" computerName="Lenovo-PC" duration="00:00:00.0000000" startTime="2018-05-31T13:26:38.9410000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f">
+      
+    </UnitTestResult>
+    <UnitTestResult executionId="7e400bdf-dccb-414c-8acb-9ecd3154cc75" testId="f4d55f85-41f0-4b9b-98d8-e7066f316a40" testName="On the user login page  user whose account was deactivated can no longer login" computerName="Lenovo-PC" duration="00:00:00.0000000" startTime="2018-05-31T13:26:38.9410000+02:00" endTime="2018-05-31T13:26:38.9410000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f">
+      
+    </UnitTestResult>
+    
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="On the ToDos page  I can add a new To Do to the list" id="45745a6c-99f3-4a43-a78a-a1e122fe6b47">
+      <Execution id="a7aeb4a6-dfe3-4252-ad6c-19c15c143928" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the ToDos page " name="On the ToDos page  I can add a new To Do to the list" />
+    </UnitTest>
+    <UnitTest name="On the user page  there is a list of users displayed" id="a518af67-a207-4aa6-8dd9-46f007182d70">
+      <Execution id="055e0200-4e4a-46a0-91c1-97cae3430b68" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the user page " name="On the user page  there is a list of users displayed" />
+    </UnitTest>
+    <UnitTest name="On the user page  there is user&apos;s profile info displayed" id="22170406-c355-4bc1-8102-0baf16e55b73">
+      <Execution id="d1826056-6f02-4be6-8f93-74fe13800b9f" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the user page " name="On the user page  there is user&apos;s profile info displayed" />
+    </UnitTest>
+    <UnitTest name="On the user login page  user, before being created, cannot log in" id="69cc884e-181f-4e8b-9842-1edf2d4acef0">
+      <Execution id="4e9a3c07-0467-4202-a9e1-6d1b717cab0d" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the user login page " name="On the user login page  user, before being created, cannot log in" />
+    </UnitTest>
+    <UnitTest name="On the user login page  after creating new user, he is able to log in when provide correct credentials" id="7f377db0-a422-4cfc-8b0d-e98d7dd5f856">
+      <Execution id="3ea70c15-6555-4b64-bb94-00be602305cc" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the user login page " name="On the user login page  after creating new user, he is able to log in when provide correct credentials" />
+    </UnitTest>
+    <UnitTest name="On the user login page  user is not able to log in, when provide incorrect password" id="31f422d4-9616-42b0-891f-4e3a51c9fa1f">
+      <Execution id="0e3d545e-37b5-4a92-9552-4d1913808c53" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the user login page " name="On the user login page  user is not able to log in, when provide incorrect password" />
+    </UnitTest>
+    <UnitTest name="On the user login page  user whose account was deactivated can no longer login" id="f4d55f85-41f0-4b9b-98d8-e7066f316a40">
+      <Execution id="7e400bdf-dccb-414c-8acb-9ecd3154cc75" />
+      <TestMethod codeBase="testresults\e2e-test-results.xml" className="On the user login page " name="On the user login page  user whose account was deactivated can no longer login" />
+    </UnitTest>
+    
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="45745a6c-99f3-4a43-a78a-a1e122fe6b47" executionId="a7aeb4a6-dfe3-4252-ad6c-19c15c143928" testListId="92706941-c65d-4719-9dee-91d34532d4a5" />
+    <TestEntry testId="a518af67-a207-4aa6-8dd9-46f007182d70" executionId="055e0200-4e4a-46a0-91c1-97cae3430b68" testListId="47687c57-4c85-4f6f-a798-533ac67e4784" />
+    <TestEntry testId="22170406-c355-4bc1-8102-0baf16e55b73" executionId="d1826056-6f02-4be6-8f93-74fe13800b9f" testListId="47687c57-4c85-4f6f-a798-533ac67e4784" />
+    <TestEntry testId="69cc884e-181f-4e8b-9842-1edf2d4acef0" executionId="4e9a3c07-0467-4202-a9e1-6d1b717cab0d" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f" />
+    <TestEntry testId="7f377db0-a422-4cfc-8b0d-e98d7dd5f856" executionId="3ea70c15-6555-4b64-bb94-00be602305cc" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f" />
+    <TestEntry testId="31f422d4-9616-42b0-891f-4e3a51c9fa1f" executionId="0e3d545e-37b5-4a92-9552-4d1913808c53" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f" />
+    <TestEntry testId="f4d55f85-41f0-4b9b-98d8-e7066f316a40" executionId="7e400bdf-dccb-414c-8acb-9ecd3154cc75" testListId="02b0fa38-69db-4759-b555-78fbf50b5a6f" />
+    
+  </TestEntries>
+  <TestLists>
+    <TestList name="On the ToDos page " id="92706941-c65d-4719-9dee-91d34532d4a5" />
+    <TestList name="On the user page " id="47687c57-4c85-4f6f-a798-533ac67e4784" />
+    <TestList name="On the user login page " id="02b0fa38-69db-4759-b555-78fbf50b5a6f" />
+    
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="1" passed="1" failed="0" />
+    <Output>
+      <StdOut>Test 'undefined' was skipped in the test run.</StdOut>
+      <StdOut>Test 'undefined' was skipped in the test run.</StdOut>
+      <StdOut>Test 'undefined' was skipped in the test run.</StdOut>
+      <StdOut>Test 'undefined' was skipped in the test run.</StdOut>
+      <StdOut>Test 'undefined' was skipped in the test run.</StdOut>
+      <StdOut>Test 'undefined' was skipped in the test run.</StdOut>
+      
+    </Output>
+  </ResultSummary>
+</TestRun>
