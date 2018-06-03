@@ -1,10 +1,9 @@
 import { browser, protractor, ExpectedConditions } from 'protractor';
 
-import { Urls } from '../../Urls';
-import { UserList } from '../../PageObjectModels/UserList';
-// import { UserForm } from '../../PageObjectModels/UserForm';
-import { Common } from '../../PageObjectModels/CommonMethods';
-import { userData } from '../../spec/testData/userData';
+import { navigation } from '../..//page-objects/navigation';
+import { userList } from '../../page-objects/userList';
+// import { userForm } from '../../page-objects/userForm';
+import { userData } from '../../spec/test-data/userData';
 
 
 const EC = ExpectedConditions;
@@ -12,8 +11,8 @@ const EC = ExpectedConditions;
 describe('On the user page ', function () {
 
     beforeEach(async () => {
-        await Urls.mainPage();
-        await browser.wait(EC.presenceOf(UserList.addNewButton));
+        await navigation.goToMainPage();
+        await browser.wait(EC.presenceOf(userList.addNewButton));
     });
 
     it('there is a list of users displayed', async (): Promise<void> => {
@@ -21,7 +20,7 @@ describe('On the user page ', function () {
     });
 
     it('there is user\'s profile info displayed', async (): Promise<void> => {
-        // const profileInfo = await UserDetails.userProfileInfo;
+        // const profileInfo = await userDetails.userProfileInfo;
         // for (let i = 0; i < profileInfo.length; i++) {
           // const headerText = await profileInfo[i].getText();
           // expect(headerText).toContain(profileData.userProfileInfo[i]);

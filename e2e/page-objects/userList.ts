@@ -1,9 +1,9 @@
 import { element, by, browser } from 'protractor';
-import { Urls } from '../Urls';
-import { Common } from '../PageObjectModels/CommonMethods';
+import { navigation } from '../page-objects/navigation';
+import { helpers } from '../helpers/helpers';
 
 
-export const UserList = {
+export const userList = {
 
     usersListLink: element(by.partialLinkText('USERS')),
     addNewButton: element.all(by.css('.cdl-button')).first(),

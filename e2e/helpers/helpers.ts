@@ -1,7 +1,7 @@
 import { browser, element, ElementFinder, ExpectedConditions, by, Key } from 'protractor';
 
 
-export const Common = {
+export const helpers = {
 
     insertText: async (element: ElementFinder, text: string): Promise<void> => {
         await element.clear();
@@ -33,7 +33,7 @@ export const Common = {
             if (userData.hasOwnProperty(key)) {
                 const textField = this.getTextField(key);
                 const value = userData[key];
-                await Common.insertText(textField, value);
+                await helpers.insertText(textField, value);
             }
         }
     },

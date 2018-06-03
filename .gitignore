@@ -1,3 +1,2 @@
-testresults/e2e-test-results.xml
-testresults/screenshotReport/testReport.html
 node_modules
+testresults

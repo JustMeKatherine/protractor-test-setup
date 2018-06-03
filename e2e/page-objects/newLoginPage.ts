@@ -1,11 +1,11 @@
 
 import { element, by, browser, ExpectedConditions } from 'protractor';
-import { Common } from '../PageObjectModels/CommonMethods';
+import { helpers } from '../helpers/helpers';
 
 
 const EC = ExpectedConditions;
 
-export const LoginApp = {
+export const loginPage = {
     loginButton: element(by.id('btLogin')),
     username: element(by.id('txtLogin')),
     password: element(by.id('txtPassword')),
@@ -13,9 +13,9 @@ export const LoginApp = {
     accessDenied: element(by.id('accessDenied')),
 
     logIn: async (login: string, pass: string) => {
-        await browser.wait(EC.presenceOf(LoginApp.username));
-        await LoginApp.username.sendKeys(login);
-        await LoginApp.password.sendKeys(pass);
-        await LoginApp.loginButton.click();
+        await browser.wait(EC.presenceOf(loginPage.username));
+        await loginPage.username.sendKeys(login);
+        await loginPage.password.sendKeys(pass);
+        await loginPage.loginButton.click();
     }
 };
