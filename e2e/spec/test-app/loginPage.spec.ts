@@ -9,7 +9,7 @@ import { userData } from '../../spec/test-data/userData';
 
 const EC = ExpectedConditions;
 
-describe('On the user login page ', () => {
+describe('On the user login page ', () : void => {
 
   it('user, before being created, cannot log in', async (): Promise<void> => {
     await navigation.goToLoginPage();

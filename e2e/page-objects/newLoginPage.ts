@@ -1,5 +1,5 @@
 
-import { element, by, browser, ExpectedConditions } from 'protractor';
+import { element, by, browser, ElementArrayFinder, ElementFinder, ExpectedConditions } from 'protractor';
 import { helpers } from '../helpers/helpers';
 
 
@@ -12,7 +12,7 @@ export const loginPage = {
     title: element(by.tagName('h2')),
     accessDenied: element(by.id('accessDenied')),
 
-    logIn: async (login: string, pass: string) => {
+    logIn: async (login: string, pass: string) : Promise<void> => {
         await browser.wait(EC.presenceOf(loginPage.username));
         await loginPage.username.sendKeys(login);
         await loginPage.password.sendKeys(pass);

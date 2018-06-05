@@ -8,7 +8,7 @@ const EC = ExpectedConditions;
 
 export const navigation = {
 
-    goToLoginPage: async () => {
+    goToLoginPage: async () : Promise<void> => {
         await browser.manage().deleteAllCookies();
         await browser.waitForAngularEnabled(false);
         await browser.get('');

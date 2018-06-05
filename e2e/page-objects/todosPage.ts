@@ -11,17 +11,17 @@ export const todosPage = {
     toDoItems: element(by.css('label[class="ng-binding"]')),
     doneItems: element(by.css('li[class~="completed"]')),
 
-    waitForTodosPageToLoad: async () => {
+    waitForTodosPageToLoad: async () : Promise<void> => {
         await browser.wait(EC.presenceOf(todosPage.title));
     },
 
-    addToDo: async (todo: string) => {
+    addToDo: async (todo: string) : Promise<void> => {
         await browser.wait(EC.presenceOf(todosPage.toDoInput));
         await todosPage.toDoInput.sendKeys(todo);
         await todosPage.toDoInput.sendKeys(Key.ENTER);
     },
 
-    checkTodos: async (todo: string) => {
+    checkTodos: async (todo: string) : Promise<void> => {
         await browser.wait(EC.elementToBeClickable(todosPage.toDoItems));
         await todosPage.toDoCheckbox.click();
     }

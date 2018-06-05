@@ -6,7 +6,7 @@ import { navigation } from '../../page-objects/navigation';
 
 const EC = ExpectedConditions;
 
-fdescribe('On the ToDos page ', () => {
+fdescribe('On the ToDos page ', () : void => {
 
   it('I can add a new To Do to the list', async (): Promise<void> => {
     await navigation.goToMainPage();

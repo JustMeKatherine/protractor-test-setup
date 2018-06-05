@@ -8,9 +8,9 @@ import { userData } from '../../spec/test-data/userData';
 
 const EC = ExpectedConditions;
 
-describe('On the user page ', function () {
+describe('On the user page ', () : void => {
 
-    beforeEach(async () => {
+    beforeEach(async () : Promise<void> => {
         await navigation.goToMainPage();
         await browser.wait(EC.presenceOf(userList.addNewButton));
     });

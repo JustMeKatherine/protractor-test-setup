@@ -1,9 +1,9 @@
-import { browser, element, ElementFinder, ExpectedConditions, by, Key } from 'protractor';
+import { browser, element, ElementFinder, ExpectedConditions, by, Key, promise } from 'protractor';
 
 
 export const helpers = {
 
-    insertText: async (element: ElementFinder, text: string): Promise<void> => {
+    insertText: async (element: ElementFinder, text: string) : Promise<void> => {
         await element.clear();
         await element.sendKeys(text);
     },
@@ -18,17 +18,17 @@ export const helpers = {
             });
     },
 
-    scrollTo: (scrollToElement) => {
+    scrollTo: (scrollToElement: ElementFinder) : promise.Promise<ElementFinder> => {
         return scrollToElement.getLocation().then(function (loc) {
             return browser.executeScript('window.scrollTo(0,arguments[0]);', loc.y);
         });
     },
 
-    deleteCookies: async () => {
+    deleteCookies: async () : Promise<void> =>  {
         await browser.manage().deleteAllCookies();
     },
 
-    fillForm: async (userData: any): Promise<void> => {
+    fillForm: async (userData: string[]): Promise<void> => {
         for (const key in userData) {
             if (userData.hasOwnProperty(key)) {
                 const textField = this.getTextField(key);
@@ -38,11 +38,11 @@ export const helpers = {
         }
     },
 
-    getTextField: (fieldName: string) => {
+    getTextField: (fieldName: string) : ElementFinder =>  {
         return element(by.css(`[name="${fieldName}"]`));
     },
 
-    optionText: (value: string) => {
+    optionText: (value: string) : ElementFinder => {
         return element(by.xpath(`//cdl-option[text()="${value}"]`));
     },
 
@@ -51,7 +51,7 @@ export const helpers = {
         return this.optionText(chosenValue).click();
     },
 
-    selectEscapeKey() {
+    selectEscapeKey: () : void => {
         browser.actions().sendKeys(Key.ESCAPE).perform();
-      }
+    },  
 };
