@@ -16,7 +16,7 @@ export const navigation = {
         await browser.wait(EC.visibilityOf(loginPage.title));
     },
 
-    goToMainPage: async () => {
+    goToMainPage: async () : Promise<void> => {
         await browser.get('http://todomvc.com/examples/angularjs/#/');
         await helpers.acceptAlertIfPresent();
         await browser.wait(EC.visibilityOf(todosPage.title));

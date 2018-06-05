@@ -27,7 +27,7 @@ describe('On the user page ', () : void => {
         // };
       });
 
-        afterAll(async () => {
+        afterAll(async () : Promise<void> => {
             // do sth if needed
     });
 });

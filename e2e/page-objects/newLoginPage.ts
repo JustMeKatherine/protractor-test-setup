@@ -1,5 +1,5 @@
 
-import { element, by, browser, ElementArrayFinder, ElementFinder, ExpectedConditions } from 'protractor';
+import { element, by, browser, ExpectedConditions } from 'protractor';
 import { helpers } from '../helpers/helpers';
 
 
